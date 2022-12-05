@@ -2,14 +2,12 @@
 	padding: 0;
 	margin: 0; 
 	box-sizing: border-box;
-
-	/* temp styles for structural html */
-	padding: 0.5rem;
-	border: 1px solid rgb(240, 240, 240);
 }
 
-body {border: none;}
-html {border: none;} 
+section{
+	border: 2px solid rgb(240, 240, 240);
+}
+
 
 /* Image Styles */
 
@@ -19,11 +17,104 @@ html {border: none;}
 	min-height: 10rem;
 }
 
+.bg-pug { 
+	background-image: url(/images/the-sleep-co_1.jpg);
+	background-position: 50% 35%;
+}
+.bg-bed { 
+	background-image: url(/images/the-sleep-co_3.jpg);
+}
+.bg-pillow { 
+	background-image: url(/images/the-sleep-co_2.jpg);
+	background-position: 50% 57%;
+}
 
-.padded { padding:5%;}
-.padded-sm { padding: 1rem; }
+
+/* Universal Styles */
+
+body {
+	font-family: 'Catamaran', sans-serif;
+	color: #192b37;
+}
+
+h2 {
+	font-size: 2.5rem;
+	line-height: 1.1;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	line-height: 1;
+}
+
+p {
+	font-weight: 200;
+	margin-bottom: 1rem;
+}
+p:last-child {	margin-bottom: 0;}
+
+.padded		{ padding: 5%; } 
+.padded-sm 	{ padding: 1rem; }
 
 .bg-dark{
 	background-color: #192b37;
 	color: white;
+}
+
+.tall-60 { min-height: 60vh;}
+.tall-70 { min-height: 70vh;}
+.tall-80 { min-height: 80vh;}
+.tall-90 { min-height: 90vh;}
+.tall-100 { min-height: 100vh;}
+
+/* Typography */
+
+.featured-text { color: #FFBE00;}
+.white-text { color: white;}
+
+.small-text { font-size: 1.5rem;}
+.medium-text { font-size: 2.2rem;}
+.big-text 	{ font-size: 4.4rem;}
+
+.font-weight-light { font-weight: 200; }
+.font-weight-normal { font-weight: normal; }
+.font-weight-bold { font-weight: 800; }
+
+.text-left 		{ text-align: left; 	}
+.text-center 	{ text-align: center;	}
+.text-right		{ text-align: right;	}
+
+.subtitle {
+	font-size:  2rem;
+	color: grey;
+}
+
+.quote-icon {
+	font-size:  6rem;
+	color: grey;
+	display: inline-block;
+	line-height: 1;
+
+}
+
+/* Header style */
+
+header{
+	background-image: url(/images/the-sleep-co_4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+header h3 {
+	font-size: 5.5rem;
+	line-height: 1;
+}
+
+/* Icon Grid */
+
+.fas{
+	display: block;
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 4rem;
 }
