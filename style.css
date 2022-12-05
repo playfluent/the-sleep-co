@@ -2,7 +2,28 @@
 	padding: 0;
 	margin: 0; 
 	box-sizing: border-box;
+
+	/* temp styles for structural html */
+	padding: 0.5rem;
+	border: 1px solid rgb(240, 240, 240);
 }
-h1{
-    color: red;
+
+body {border: none;}
+html {border: none;} 
+
+/* Image Styles */
+
+.bg-image{
+	background-image: url(/images/the-sleep-co_1.jpg);
+	background-size: cover;
+	min-height: 10rem;
+}
+
+
+.padded { padding:5%;}
+.padded-sm { padding: 1rem; }
+
+.bg-dark{
+	background-color: #192b37;
+	color: white;
 }
